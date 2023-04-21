@@ -32,7 +32,7 @@
             <h2>Expertos en trabajos de obras civiles</h2>
             <p>cotiza con nostros tus remodelaciones o instalaciones</p>
         </div>
-        <section id="about" class="about">
+    <section id="about" class="about">
             <h2>Quienes somos</h2>
             <div class="about-sub">
                 <div class="absb">
@@ -42,38 +42,40 @@
                 <p>Somos una empresa de remodelaciones y trabajos eléctricos comprometida con la calidad y la seguridad. Contamos con un equipo experto y altamente capacitado en ofrecer soluciones eficientes y personalizadas para su hogar o negocio. Trabajamos de manera transparente y comprometida con nuestros clientes en cada etapa del proyecto, asegurando su satisfacción y tranquilidad.
                 </p>
             </div> 
-        </section>
-        <section  id="service" class="Servicios">
-            <h2>Servicios</h2>
-            <div class="box">
-                <div class="card">
-                    <span class="material-symbols-outlined">home_repair_service</span>
-                    <p>Reparaciones</p>
-                </div>
-                <div class="card">
-                    <span class="material-symbols-outlined">bolt</span>
-                    <p>Instalaciones electricas</p>
-                </div>
-                <div class="card">
-                    <span class="material-symbols-outlined">construction</span>
-                    <p>Remodelaciones<br>/Instalaciones</p>
-                </div>
+    </section>
+    <section  id="service" class="Servicios">
+        <h2>Servicios</h2>
+        <div class="box">
+            <div class="card">
+                <span class="material-symbols-outlined">home_repair_service</span>
+                <p>Reparaciones</p>
             </div>
-        </section>
-        <section id="contact" class="contact">
-            <div class="contact-sub">
-                <h2>Contactanos</h2>
-                <p>¿Porque pedimos estos datos?<br><span>Porque asi tenemos tus datos para responderte de manera mas eficaz y personalizada</span></p>
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Apellido">
-                <input type="email" placeholder="Correo electronico">
-                <input type="tel" placeholder="Telefono">
+            <div class="card">
+                <span class="material-symbols-outlined">bolt</span>
+                <p>Instalaciones electricas</p>
+            </div>
+            <div class="card">
+                <span class="material-symbols-outlined">construction</span>
+                <p>Remodelaciones<br>/Instalaciones</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="contact-sub">
+            <h2>Contactanos</h2>
+            <p>¿Porque pedimos estos datos?<br><span>Porque asi tenemos tus datos para responderte de manera mas eficaz y personalizada</span></p>
+            <form action="formulario.php" method="POST">
+                <input type="text" name="name" placeholder="Nombre">
+                <input type="text"  name="apellido" placeholder="Apellido">
+                <input type="mail" name="email"placeholder="Correo electronico">
+                <input type="tel"  name="tel" placeholder="Telefono">
                 <div id="msg">
                     <textarea class="msg" placeholder="Mensaje" name="comentarios" rows="5" cols="129"></textarea>
                 </div>
                 <button class="btn-env" type="submit">Enviar</button>
-            </div>
-        </section>
+            </form>     
+        </div>
+    </section>
    </main>
    <footer>Derechos reservados 2023</footer>
    <script src="scripts/scripts.js"></script>
