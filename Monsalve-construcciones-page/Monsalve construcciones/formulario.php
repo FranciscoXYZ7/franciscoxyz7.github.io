@@ -15,8 +15,8 @@ $comentarios .= "Mensaje: $comentarios";
 
 
 
-mail($para, $asunto, ,$comentarios);
+mail($para, $asunto ,$comentarios);
 
-header('Location:exito.html')
+header('Location:')
 
 ?>
