@@ -14,4 +14,6 @@ $comentarios .= "Telefono de contacto: $phone \n";
 $comentarios .= "Mensaje: $comentarios";
 
 mail($para, $asunto ,$comentarios);
+
+header("location:exito.html")
 ?>
