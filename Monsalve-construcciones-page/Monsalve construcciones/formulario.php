@@ -1,19 +1,19 @@
 <?php
-$name = $_POST['name'];
-$lname = $_POST['apellido'];
-$mail = $_POST['email'];
-$tel = $_POST['tel'];
-$comentarios = $_POST['comentarios'];
+$nombre = $_POST['name'];
+$apellido = $_POST['apellido'];
+$correo = $_POST['email'];
+$phone = $_POST['tel'];
+$mensaje = $_POST['comentarios'];
+
+$comentarios = "Este mensaje fue enviado por: $nombre $apellido\n";
+$comentarios .= "Su e-mail es: $correo\n";
+$comentarios .= "Telefono de contacto: $phone \n";
+$comentarios .= "Mensaje: . $_POST[$mensaje]r\n";
+
 
 $para = 'franciscoxyz7@gmail.com';
 $asunto = 'prueba php';
 
-$comentarios = "Este mensaje fue enviado por: $name\n";
-$comentarios .= "Su e-mail es: $mail\n";
-$comentarios .= "Telefono de contacto: $phone \n";
-$comentarios .= "Mensaje: $comentarios";
-
-mail($para, $asunto ,$comentarios);
-
-header("location:exito.html")
+mail($para, $asunto ,utf8_decode($comentarios), $header);
+header('location:exito.html')
 ?>
