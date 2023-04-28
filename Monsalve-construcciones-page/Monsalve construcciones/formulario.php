@@ -14,6 +14,6 @@ $comentarios .= "Mensaje: . $_POST[$mensaje]r\n";
 $para = 'franciscoxyz7@gmail.com';
 $asunto = 'prueba php';
 
-mail($para, $asunto ,utf8_decode($comentarios), $header);
+mail($para, $asunto ,utf8_decode($mensaje), $header);
 header('location:exito.html');
 ?>
