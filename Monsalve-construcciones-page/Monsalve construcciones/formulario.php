@@ -15,5 +15,5 @@ $para = 'franciscoxyz7@gmail.com';
 $asunto = 'prueba php';
 
 mail($para, $asunto ,utf8_decode($comentarios), $header);
-header('location:exito.html')
+header('location:exito.html');
 ?>
