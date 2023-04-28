@@ -1,19 +1,25 @@
 <?php
+// llamando a los campos
+
 $nombre = $_POST['name'];
-$apellido = $_POST['apellido'];
-$correo = $_POST['email'];
-$phone = $_POST['tel'];
-$mensaje = $_POST['comentarios'];
+$numero = $_POST['tel'];
+$correo = $_POST['mail'];
+$msg = $_POST['msg'];
 
-$comentarios = "Este mensaje fue enviado por: $nombre $apellido\n";
-$comentarios .= "Su e-mail es: $correo\n";
-$comentarios .= "Telefono de contacto: $phone \n";
-$comentarios .= "Mensaje: . $_POST[$mensaje]r\n";
+//datos correo
 
+$destinatario = "franciscopadillaxyz7@gmail.com";
+$asunto = "Contacto desde nuestra web";
 
-$para = 'franciscoxyz7@gmail.com';
-$asunto = 'prueba php';
+//
+$carta = "De: $nombre\n";
+$carta .=  "Correo: $correo \n";
+$carta .= "Telefono: $telefono\n";
+$carta .= "mensaje: $mensaje";
 
-mail($para, $asunto ,utf8_decode($mensaje), $header);
-header('location:exito.html');
+//enviando
+
+mail($destinatario, $asunto, $carta);
+// header("location:exito.html");
+
 ?>
