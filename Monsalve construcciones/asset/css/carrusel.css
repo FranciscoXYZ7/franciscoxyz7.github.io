@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.itemcarrusel{
+    border: 1px solid black;
+    height: 200px;
+    position: relative;
+}
+
+
+.tarjetacarrusel{
+    background-color: aquamarine;
+    height: 100%;
+}
+.conteitemscarrusel{
+    height: 200px;
+    overflow: hidden;
+}
+.flechascarrusel{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
